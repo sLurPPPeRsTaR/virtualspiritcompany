@@ -10,6 +10,15 @@ const Frame = ({photo}) => {
   });
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    if (globalState.isReset === true) {
+      setLocalState({
+        localCounter: 0,
+      });
+      dispatch({type: '_UPDATE_ISRESET', value: false});
+    }
+  }, [globalState.isReset === true]);
+
   const [localState, setLocalState] = useState({
     localCounter: 0,
   });
