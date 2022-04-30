@@ -10,8 +10,6 @@ const Frame = ({photo}) => {
   });
   const dispatch = useDispatch();
 
-  useEffect(() => {}, []);
-
   const [localState, setLocalState] = useState({
     localCounter: 0,
   });
@@ -33,7 +31,6 @@ const Frame = ({photo}) => {
           type="primary"
           onPress={() =>
             setLocalState({
-              ...localState,
               localCounter: localState.localCounter + 1,
             })
           }
@@ -46,7 +43,6 @@ const Frame = ({photo}) => {
           onPress={() => {
             if (localState.localCounter > 0) {
               setLocalState({
-                ...localState,
                 localCounter: localState.localCounter - 1,
               });
             }
