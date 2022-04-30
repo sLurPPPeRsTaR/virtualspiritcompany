@@ -17,8 +17,8 @@ const Frame = ({photo}) => {
   });
 
   const likeSum = () => {
-    const sumOfLike = globalState.counter + localState.localCounter;
-    return sumOfLike;
+    const sum = globalState.counter + localState.localCounter;
+    return sum;
   };
 
   return (
