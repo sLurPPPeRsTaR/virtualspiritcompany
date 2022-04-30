@@ -1,7 +1,7 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View, Text} from 'react-native';
-import {ButtonHeader, Frame, Gap} from '../../components';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import {DummyImg1, DummyImg2, DummyImg3} from '../../assets';
+import {ButtonHeader, Frame, Gap} from '../../components';
 import {colors} from '../../utils';
 
 const Home = () => {
